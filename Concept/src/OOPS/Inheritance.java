@@ -12,6 +12,10 @@ public class Inheritance {
         Vehicle ref = new Car(); // Upcasting: Car is-a Vehicle
         ref.start(); // Car starts with a key (overridden method is called)
 
+         //Car c1 = new Vehicle(); // Not Feasible;
+        Car c1 = (Car) new Vehicle(); // Feasible
+        c1.start();
+        c1.openTrunk();
         // If you need Car-specific methods, you can downcast:
          ((Car) ref).openTrunk();
     }
