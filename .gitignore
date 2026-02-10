@@ -31,3 +31,9 @@
 /out/production/Concept/StarPattern/RightAngle.class
 /out/production/Concept/BasicLogic/UserInput.class
 /out/production/Concept/OOPS/Variable.class
+/SpringFramework/bin/com/apex/resources/*.xml
+/SpringFramework/bin/com/apex/main/*.class
+/SpringFramework/bin/com/apex/beans/*.class
+/SpringFramework/.settings/*.prefs
+/SpringFramework/*.project
+/SpringFramework/*.classpath
