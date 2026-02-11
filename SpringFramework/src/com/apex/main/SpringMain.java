@@ -4,8 +4,10 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.apex.beans.Employee;
 import com.apex.beans.Student;
 import com.apex.resources.AppConfig;
+import com.apex.resources.AppContext;
 
 public class SpringMain {
 
@@ -30,6 +32,18 @@ public class SpringMain {
 			Student s4 =  (Student) configjava.getBean("stud4");
 			s4.display();
 			System.out.println("---------------------------------");
+			
+			
+			System.out.println("-------Using Annotation Component and Component Scan and Value----------");
+			String appContextPath = "/com/apex/resources/ApplicationContext.xml";
+			ApplicationContext appContext = new ClassPathXmlApplicationContext(appContextPath);
+			Employee e1 = (Employee) appContext.getBean("employee");
+			e1.display();
+			System.out.println("---------------------------------");
+			ApplicationContext appContextJava = new AnnotationConfigApplicationContext(AppContext.class);
+			Employee e2 = (Employee) appContext.getBean("employee");
+			e2.display();
+			
 			
 		}catch(Exception e){
 			e.printStackTrace();
