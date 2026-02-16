@@ -8,3 +8,6 @@
 /SpringFramework/.settings/*.prefs
 /SpringFramework/*.project
 /SpringFramework/*.classpath
+/SpringDependencyInjection/bin
+/SpringDependencyInjection/*.project
+/SpringDependencyInjection/*.classpath

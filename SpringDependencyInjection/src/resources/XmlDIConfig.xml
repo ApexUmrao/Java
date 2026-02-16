@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="engineObj" class="com.apex.beans.Engine">
+    <property name="strokes" value="4"></property>
+    <property name="horsepower" value="1200"></property>
+    <property name="enginetype" value="Petrol"></property>
+    </bean>
+    
+    <bean id="carObj" class="com.apex.beans.Car">
+    <property name="seater" value="5"></property>
+    <property name="colour" value="Yellow"></property>
+    <property name="engine" ref="engineObj"></property>
+    </bean>
+    
+    <bean id="engCon" class="com.apex.beans.Engine">
+    <constructor-arg value="6"></constructor-arg>
+    <constructor-arg value="2100"></constructor-arg>
+    <constructor-arg value="CNG"></constructor-arg>
+    </bean>
+	
+	<bean id="carConstruct" class="com.apex.beans.Car">
+	<constructor-arg value="4"></constructor-arg>
+	<constructor-arg value="Green"></constructor-arg>
+	<constructor-arg ref="engCon"></constructor-arg>
+	</bean>
+	
+</beans>
