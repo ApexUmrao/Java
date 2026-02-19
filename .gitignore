@@ -11,3 +11,6 @@
 /SpringDependencyInjection/bin
 /SpringDependencyInjection/*.project
 /SpringDependencyInjection/*.classpath
+/SpringAutowire/bin
+/SpringAutowire/*.project
+/SpringAutowire/*.classpath
