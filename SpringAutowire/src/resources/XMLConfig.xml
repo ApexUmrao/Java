@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+   <bean id="addr1" class="com.apex.beans.Address">
+   <property name="houseNo" value="342"></property>
+   <property name="city" value="Kanpur"></property>
+   <property name="state" value="UP"></property>
+   </bean>
+   
+    <bean id="addr2" class="com.apex.beans.Address" autowire-candidate="false" >
+   <property name="houseNo" value="456"></property>
+   <property name="city" value="Bangalore"></property>
+   <property name="state" value="Karnataka"></property>
+   </bean>
+   
+   <bean id="subjectObj" class="com.apex.beans.Subject">
+   <property name="sub">
+   	<list>
+   		<value>Science</value>
+   		<value>Math</value>
+   		<value>English</value>
+   	</list>
+   	</property>
+   </bean>
+   
+   <bean id="studentObj" class="com.apex.beans.Student" autowire="byType">
+   <property name="name" value="Shivanshu"></property>
+   <property name="rollNo" value="2"></property>
+   
+   <!--   Manual Dependency Injection  
+   
+   <property name="address" ref=""addr1""></property>
+   <property name="subject" ref="subjectObj"></property>
+    
+   -->
+   </bean>
+        
+</beans>
