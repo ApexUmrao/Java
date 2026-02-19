@@ -26,7 +26,7 @@
    	</property>
    </bean>
    
-   <bean id="studentObj" class="com.apex.beans.Student" autowire="byType">
+   <bean id="studentObj" class="com.apex.beans.StudentAutowire" autowire="byType">
    <property name="name" value="Shivanshu"></property>
    <property name="rollNo" value="2"></property>
    
