@@ -3,7 +3,7 @@ package com.apex.beans;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 
-public class Student {
+public class StudentAutowire {
 	
 	private String name;
 	private int rollNo;

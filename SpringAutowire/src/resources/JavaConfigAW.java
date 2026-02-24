@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import com.apex.beans.Address;
-import com.apex.beans.Student;
+import com.apex.beans.StudentAutowire;
 import com.apex.beans.Subject;
 
 @Configuration
@@ -46,8 +46,8 @@ public class JavaConfigAW {
 	}
 	
 	@Bean("stud")
-	public Student createStdObj() {
-		Student std = new Student();
+	public StudentAutowire createStdObj() {
+		StudentAutowire std = new StudentAutowire();
 		
 		std.setRollNo(1);
 		std.setName("Aryan");
