@@ -1,0 +1,14 @@
+{
+  "orderId": "ORD123",
+  "customer": {
+    "id": 10,
+    "name": "John Doe"
+  },
+  "items": [
+    {
+      "productId": 1001,
+      "quantity": 2
+    }
+  ],
+  "totalAmount": 100.0
+}

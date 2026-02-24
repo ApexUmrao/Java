@@ -1,0 +1,20 @@
+{
+ "Envelope": {
+  "Header": null,
+  "Body": {
+   "CustomerCreationOperation": {
+    "CustomerCreationRequest": {
+     "crLosUploadCustData": {
+      "nin": "1041798693",
+      "applicantCategory": "PRAPPL",
+      "applicantType": "I",
+      "individualName": "Anil6806Kharatmol6806",
+      "birthDate": "1991-08-08",
+      "telephone": "966595187018",
+      "idType": "TB"
+     }
+    }
+   }
+  }
+ }
+}
