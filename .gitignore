@@ -14,3 +14,8 @@
 /SpringAutowire/bin
 /SpringAutowire/*.project
 /SpringAutowire/*.classpath
+/JavaAutomationTool/bin
+/JavaAutomationTool/*.project
+/JavaAutomationTool/*.classpath
+/JavaAutomationTool/target
+/JavaAutomationTool/Decompiled
