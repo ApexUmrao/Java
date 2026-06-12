@@ -1,7 +1,15 @@
 /Array/Array.iml
+/Array/bin
+/Array/.settings/*.prefs
+/Array/*.project
+/Array/*.classpath
 /out
 /.idea/compiler.xml
 /Concept/Concept.iml
+/Concept/bin
+/Concept/.settings/*.prefs
+/Concept/*.project
+/Concept/*.classpath
 /.idea/encodings.xml
 /.idea/jarRepositories.xml
 /SpringFramework/bin
@@ -14,8 +22,11 @@
 /SpringAutowire/bin
 /SpringAutowire/*.project
 /SpringAutowire/*.classpath
+/SpringAutowire/.settings/*.prefs
 /JavaAutomationTool/bin
 /JavaAutomationTool/*.project
 /JavaAutomationTool/*.classpath
 /JavaAutomationTool/target
 /JavaAutomationTool/Decompiled
+/JavaAutomationTool/src/Resource
+
