@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class Demo {
 
@@ -54,5 +56,18 @@ public class Demo {
 				.map(String :: toUpperCase)
 				.sorted()
 				.forEach(System.out::println);
+		
+//		int totalSalary = employees.stream()
+//			    .collect(Collectors.averagingInt(Employee::getSalary));
+		
+		employees.stream().collect(Collectors.toList());
+		
+		Map <String,Integer> map =employees.stream().collect(Collectors.toMap(Employee :: getName, Employee :: getEmpID));
+		System.out.println(map);
+		
+//		String result =employees.stream().collect(Collectors.joining("||", "<<", ">>"));
+
+		
+		
 	}
 }
