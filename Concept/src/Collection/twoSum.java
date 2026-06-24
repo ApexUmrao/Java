@@ -37,14 +37,14 @@ public class twoSum {
 	        
 	        System.out.println(results);
 	        
-	        int rem = 0;
 	        
-	        Map<Integer,Integer> map = new HashMap<>();
+	        Map<Integer,Integer> map = new HashMap<>();   //arr -- 2,7,11,15 1st -- rem = 2-9 = 7 --- rem = 7-9 = 2
 	        for (int i =0; i<=arr.length-1;i++) {
-	        	rem = arr[i]-target;
+	        	int rem = target - arr[i];
 	        	
 	        	if (map.containsKey(rem)) {
-	        		System.out.println("true --> "+ rem);
+	        		System.out.println("Pair found: " + rem + " + " + arr[i] + " = " + target);
+	                System.out.println("Indices: " + map.get(rem) + ", " + i);	        		
 	        	}
 	        	
 	        	map.put(arr[i], i);	
