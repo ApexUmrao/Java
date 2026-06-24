@@ -1,5 +1,6 @@
 package StreamAPI;
 
+import java.awt.print.Printable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -66,7 +67,10 @@ public class Demo {
 		System.out.println(map);
 		
 //		String result =employees.stream().collect(Collectors.joining("||", "<<", ">>"));
-
+		
+		Map<Long, List<Employee>> list2 = employees.stream()
+				.collect(Collectors.groupingBy(Employee::getSalary));		
+		//System.out.println(list2);
 		
 		
 	}

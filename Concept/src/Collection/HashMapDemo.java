@@ -9,7 +9,7 @@ public class HashMapDemo {
 	
 	public static void main(String[] args) {
 		
-		HashMap<String, Integer> map = new HashMap<>();
+		Map<String, Integer> map = new HashMap<>();
 		
 		// Uses Hashing --  retrieval, insertion, and removal -- of O(1) time & space complexity --- worst case O(N) time. 
 		// Unique Key but value can be duplicate
@@ -55,14 +55,18 @@ public class HashMapDemo {
 		
 		//Iterating over HashMap using for each loop
 		System.out.println("Iterating over HashMap:");
-//		for (String key : map.keySet()) {
-//			System.out.println("Key: " + key + ", Value: " + map.get(key));
-//		}
 		
+		//Return a set of all Key    ---- Drawback requires an additional lookup (map.get(key)) for every iteration.
+		for (String key : map.keySet()) {
+			System.out.println("Key: " + key + ", Value: " + map.get(key));
+		}
+		
+		//Return a set having key-value pairs (Map.Entry objects).
 		for (Map.Entry<String, Integer> entry : map.entrySet()) {
 			System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
 		}
 		
+		map.forEach((key,value) -> System.out.println("Key --> " + key + " & Value --> " + value)); 
 		
 	}
 
