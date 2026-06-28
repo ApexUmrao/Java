@@ -6,6 +6,8 @@ import java.util.Comparator;
 import java.util.List;
 
 public class ComparatorTest {
+//    The Comparator interface allows you to create multiple Comparator instances, each defining a different ordering for objects.
+//    This flexibility means you can sort objects by various attributes or in different orders without altering the object's class.
 
     public static void main(String[] args) {
         List<Student> list = new ArrayList<Student>();

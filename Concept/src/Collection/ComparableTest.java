@@ -6,6 +6,13 @@ import java.util.List;
 
 public class ComparableTest {
 
+
+//    Java provides a Comparable interface to define a natural ordering for objects of a user-defined class.
+//    By implementing the Comparable interface, a class can provide a single natural ordering that can be used to sort its instances.
+//    This is particularly useful when you need a default way to compare and sort objects.
+
+    // Single Natural Ordering: The primary limitation of Comparable is that it allows only one natural ordering for the objects of a class
+
     public static void main(String[] args) {
         List<Student> students = new ArrayList<Student>();
 
