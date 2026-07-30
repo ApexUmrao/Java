@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class Demo {
@@ -72,6 +73,16 @@ public class Demo {
 				.collect(Collectors.groupingBy(Employee::getSalary));		
 		//System.out.println(list2);
 		
+		List<Integer> list3 = Arrays.asList(1,2,3,4,5,6,7,11,8,8,9,2,9);
 		
-	}
+		Optional<Integer> num = list3.stream()
+			.distinct()
+			.sorted()
+			.skip(1)
+			.findFirst();
+			//.ifPresent(System.out::println);
+		
+		System.out.println(num.get());
+		
+		}
 }
