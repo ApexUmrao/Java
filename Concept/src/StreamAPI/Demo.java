@@ -84,5 +84,11 @@ public class Demo {
 		
 		System.out.println(num.get());
 		
+		
+		int sum = list3.stream()
+                .mapToInt(Integer::intValue)
+                .sum();
+		
+		System.out.println("Sum: " + sum);
 		}
 }
