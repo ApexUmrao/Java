@@ -21,6 +21,13 @@ public class Stream2 {
                                               x -> x.length(),
                                               y->y));
         System.out.println(map);
+
+        List<String> words = Arrays.asList("Java", "Stream", "API", "Code", "Fun");
+        Map<Integer, List<String>> groupedByLength = words.stream()
+                .collect(Collectors.groupingBy(String::length));
+        System.out.println(groupedByLength);
+        // Output: {3=[API], 4=[Java, Code, Fun], 6=[Stream]}
+
     }
 }
 
