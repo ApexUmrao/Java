@@ -1,4 +1,4 @@
-package apexHack;
+package ApexHack;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;

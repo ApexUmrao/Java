@@ -1,4 +1,4 @@
-package systemDesign;
+package SystemDesign;
 
 public class Singleton {
 	
