@@ -1,9 +1,6 @@
 package InterviewCoding;
 
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -105,7 +102,7 @@ public class PublicsSapient3 {
 		
 		
 		//Find the first non-repeating character in "Welcome to Java" using Java Streams.
-		String input = "Welcome to Java";
+		String input = "Welcome to Java W";
 
 		Character result =
 		input.replace(" ", "")
@@ -143,6 +140,8 @@ public class PublicsSapient3 {
 		
 		
 		//Merge 3 lists into a single list and remove duplicates using Java Streams.
+        List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
 		List<Integer> list1 = List.of(1, 2, 3, 4, 5);
 		List<Integer> list2 = List.of(4, 5, 6, 7, 8);
 		List<Integer> list3 = List.of(7, 8, 9, 10);
